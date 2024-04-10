@@ -4,13 +4,13 @@
 
 The project follows a structured layout to maintain organization and clarity. Below is a brief overview of each folder:
 
-- sources
+- `sources`:
 The sources directory contains the main source code of the project. This is where you'll find the Python modules, packages, or scripts that constitute the functionality of the project. It's organized hierarchically based on the project's architecture.
 
-- tests
+- `tests`:
 The tests directory houses all the test code for the project. These tests validate the functionality of the source code and ensure that changes or additions do not introduce regressions. The directory may contain unit tests, integration tests, or any other forms of automated testing.
 
-- utilities
+- `utilities`:
 The utilities directory holds any auxiliary scripts, tools, or utilities that support the development process. These may include helper functions, scripts for data processing, or any other tools that aid in development but aren't part of the core project functionality.
 
 

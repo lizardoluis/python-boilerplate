@@ -1,0 +1,19 @@
+name: "Black Formatter"
+on: [push]
+env:
+  BLACK_VERSION: "23.3.0"
+  BLACK_OPTIONS: "--check --verbose"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+    
+      - name: "Formating source code"
+        uses: psf/black@stable
+        with:
+          options: ${{ env.BLACK_OPTIONS }}
+          src: "./sources ./tests ./utilities"
+          jupyter: false
+          version: ${{ env.BLACK_VERSION }}
